@@ -1,1 +1,1 @@
-# marvelWiki
+# marvel-wiki
