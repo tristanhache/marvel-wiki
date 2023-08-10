@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-    color: #fd0f0f
+    color: #c71515
 }
 
 .text-primary {
@@ -43,7 +43,7 @@ b,strong {
 }
 
 .btn,button {
-    box-shadow: none!important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.38);
     font-weight: 500
 }
 
@@ -116,6 +116,12 @@ b,strong {
     background: #970f0a!important;
     color: #e9e8e0!important;
     border-color: #970f0a!important
+}
+
+.btn-primary:hover {
+    background: #700a07!important;
+    color: #e9e8e0!important;
+    border-color: #700a07!important
 }
 
 .btn-secondary {
@@ -503,7 +509,7 @@ header.over-air .search-elements input.is-input {
 }
 
 .slide-cover {
-    background-color: #00383c;
+    background-color: #000000;
     position: absolute;
     top: 0;
     left: 0;
@@ -4911,4 +4917,8 @@ button.toast-close-button {
     right: 15px;
     top: 50%;
     margin-top: -8px
+}
+
+.film-fav {
+    
 }
