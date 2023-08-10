@@ -3178,7 +3178,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
-    -ms-touch-action: none;
     background: rgba(0,0,0,.1)
 }
 
@@ -4514,7 +4513,6 @@ button.swiper-pagination-bullet {
 }
 
 .ps-container {
-    -ms-touch-action: none;
     overflow: hidden!important
 }
 
@@ -4700,7 +4698,6 @@ button.toast-close-button {
     cursor: pointer;
     background: 0 0;
     border: 0;
-    -webkit-appearance: none
 }
 
 .toast-top-center {
@@ -4917,8 +4914,4 @@ button.toast-close-button {
     right: 15px;
     top: 50%;
     margin-top: -8px
-}
-
-.film-fav {
-    
 }
