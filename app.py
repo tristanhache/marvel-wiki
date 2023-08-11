@@ -10,6 +10,8 @@ def index():
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404
+
+
     
 @app.route("/iron-man")
 def ironman():
@@ -34,3 +36,9 @@ def capamericafirstavengers():
 @app.route("/the-avengers")
 def theavengers():
     return render_template("movies/marvel/the-avengers.html")
+
+
+
+@app.route("/iron-man-3")
+def ironman3():
+    return render_template("movies/marvel/phase2/iron-man-3.html")
