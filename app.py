@@ -60,5 +60,5 @@ def ageultron():
     return render_template("movies/marvel/phase2/avengers-age-ultron.html")
 
 @app.route("/ant-man")
-def abt-man():
+def antman():
     return render_template("movies/marvel/phase2/ant-man.html")
