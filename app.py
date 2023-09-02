@@ -1,25 +1,9 @@
 from flask import Flask, render_template
-import imdb
+from PyMovieDb import IMDB
+
+imdb = IMDB()
 
 app = Flask(__name__)
-
-
-movies = [
-    {"title": "Iron-Man", "genre": "Action", "year": 2008},
-    {"title": "Thor", "genre": "Action", "year": 2011},
-    {"title": "The Avengers", "Action": "Drama", "year": 2012},
-]
-
-def get_imdb_ratings():
-    ia = imdb.IMDb()
-    for movie in movies:
-        search_result = ia.search_movie(movie["title"])
-        if search_result:
-            movie_data = search_result[0]
-            movie["rating"] = movie_data.get("rating", "N/A")
-        else:
-            movie["rating"] = "N/A"
-
 
 @app.route("/")
 def index():
@@ -28,10 +12,6 @@ def index():
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404
-
-@app.route("/test")
-def test():
-    return render_template("testMovie.html")
 
 
     
@@ -84,3 +64,5 @@ def ageultron():
 @app.route("/ant-man")
 def antman():
     return render_template("movies/marvel/phase2/ant-man.html")
+
+
