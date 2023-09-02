@@ -30,6 +30,10 @@ def index():
 def not_found(error):
     return render_template('error.html'), 404
 
+@app.route("/test")
+def test():
+    return render_template("testMovie.html")
+
 
     
 @app.route("/iron-man")
