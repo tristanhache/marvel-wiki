@@ -10,7 +10,6 @@ movies = [
     {"title": "The Avengers", "Action": "Drama", "year": 2012},
 ]
 
-# Function to fetch IMDb ratings
 def get_imdb_ratings():
     ia = imdb.IMDb()
     for movie in movies:
