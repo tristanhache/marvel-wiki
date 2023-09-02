@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Movie Page</h1>
+    </header>
+    <main>
+        <h2>Movies</h2>
+        <ul>
+            {% for movie in movies %}
+            <li>
+                <h3>{{ movie.title }}</h3>
+                <p><strong>Genre:</strong> {{ movie.genre }}</p>
+                <p><strong>Year:</strong> {{ movie.year }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for movie in movies %}
+            <li>
+                <h3>{{ movie.title }}</h3>
+                <p><strong>Genre:</strong> {{ movie.genre }}</p>
+                <p><strong>Year:</strong> {{ movie.year }}</p>
+                <p><strong>IMDb Rating:</strong> {{ movie.rating }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Movie Page</p>
+    </footer>
+</body>
+</html>
