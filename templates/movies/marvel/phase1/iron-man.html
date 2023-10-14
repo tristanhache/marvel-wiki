@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/790e80418f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/movie/marvel/phase-1.css') }}">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-268470515-1"></script>
     </head>
     <body id="gMNrTK">
         <div id="mobile-overlay"></div>
@@ -253,36 +252,8 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-default section-flow-vertical" id="section-comment">
-                        <div class="container">
-                            <div class="section-header">
-                                <div class="is-title">
-                                    <h2 class="heading-md">Discussion</h2>
-                                </div>
-                                <div class="flex-grow"></div>
-                            </div>
-                            <div id="disqus_thread"></div>
-                            <script>
-                                const disqus_config = function() {
-                                    this.page.url = 'https://marvel-wiki1-78b18efbdd37.herokuapp.com/iron-man';
-                                    this.page.identifier = 'movie-66674';
-                                };
-                                (function() {
-                                    // DON'T EDIT BELOW THIS LINE
-                                    var d = document
-                                      , s = d.createElement('script');
-                                    s.src = 'https://movie-3fzpaug9oy.disqus.com/embed.js';
-                                    s.setAttribute('data-timestamp', +new Date());
-                                    (d.head || d.body).appendChild(s);
-                                }
-                                )();
-                            </script>
-                            <noscript>
-                                Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                            powered by Disqus.</a>
-                            </noscript>
-                        </div>
-                    </section>
+                    <script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div id="commento"></div>
             <!--/// footer ///-->
             <div class="flex-grow"></div>
             <footer>
